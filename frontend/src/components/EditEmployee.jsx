@@ -227,7 +227,8 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
-const SERVER_PORT = process.env.SERVER_PORT || "http://localhost:4001";
+
+const SERVER_PORT = process.env.REACT_APP_SERVER_PORT || "https://dealsdray-9sfu.onrender.com" || "http://localhost:4001";
 
 const EditEmployee = () => {
   const [name, setName] = useState("");
