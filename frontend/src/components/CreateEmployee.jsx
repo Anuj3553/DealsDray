@@ -202,7 +202,8 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
-const SERVER_PORT = process.env.SERVER_PORT || "http://localhost:4001";
+
+const SERVER_PORT = process.env.REACT_APP_SERVER_PORT || "https://dealsdray-9sfu.onrender.com" || "http://localhost:4001";
 
 const CreateEmployee = () => {
   const navigate = useNavigate();

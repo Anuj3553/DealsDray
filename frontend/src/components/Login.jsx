@@ -52,7 +52,8 @@ import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import Button from '@mui/material/Button';
-const SERVER_PORT = process.env.SERVER_PORT || "http://localhost:4001";
+
+const SERVER_PORT = process.env.REACT_APP_SERVER_PORT || "https://dealsdray-9sfu.onrender.com" || "http://localhost:4001";
 
 const Login = () => {
   let [email, setEmail] = useState('');

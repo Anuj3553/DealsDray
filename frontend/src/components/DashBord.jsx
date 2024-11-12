@@ -42,7 +42,8 @@ import React, { useEffect, useState } from 'react';
 import axios from "axios";
 import { Link, useParams } from 'react-router-dom';
 import Button from '@mui/material/Button';
-const SERVER_PORT = process.env.SERVER_PORT || "http://localhost:4001";
+
+const SERVER_PORT = process.env.REACT_APP_SERVER_PORT || "https://dealsdray-9sfu.onrender.com" || "http://localhost:4001";
 
 const DashBord = () => {
   let [name, setName] = useState("");
